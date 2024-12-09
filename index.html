@@ -178,6 +178,12 @@
 
         checkboxes.forEach(checkbox => {
             checkbox.addEventListener('change', function () {
+                if (!checkbox.checked) {
+                    // Nếu người dùng bỏ chọn checkbox, bật lại trạng thái "checked"
+                    checkbox.checked = true;
+                    return; // Dừng logic tại đây
+                }
+
                 // Nếu một checkbox được chọn, bỏ chọn tất cả các checkbox còn lại
                 checkboxes.forEach(otherCheckbox => {
                     if (otherCheckbox !== checkbox) {
