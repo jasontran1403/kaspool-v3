@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Multiple checkbox</title>
+    <script src="https://kit.fontawesome.com/a956e8784e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="top-container">
+            <div class="wallet-container">
+                <div class="wallet-avt">
+                    <img src="/assets/cryptoicon/nacho.png" alt="">
+                </div>
+                <div class="wallet-info">
+                    <h3>ABCD...CXYZ</h3>
+                    <h4>0.009BNB</h4>
+                </div>
+            </div>
+            <img src="/assets/rank/10.png" alt="">
+        </div>
+
+        <div class="bottom-tap-bar">
+            <div class="tab expanded" onclick="expandTab(this)">
+                <img class="icon-balance" src="/assets/iconmenu/white/balance.png" alt="">
+                <span class="text">Balance</span>
+            </div>
+            <div class="tab" onclick="expandTab(this)">
+                <img class="icon-mining" src="/assets/iconmenu/black/balance.png" alt="">
+                <span class="text">Mining</span>
+            </div>
+            <div class="tab" onclick="expandTab(this)">
+                <img class="icon-claim" src="/assets/iconmenu/black/balance.png" alt="">
+                <span class="text">Claim</span>
+            </div>
+            <div class="tab" onclick="expandTab(this)">
+                <img class="icon-withdraw" src="/assets/iconmenu/black/balance.png" alt="">
+                <span class="text">Withdraw</span>
+            </div>
+            <div class="tab" onclick="expandTab(this)">
+                <img class="icon-transfer" src="/assets/iconmenu/black/balance.png" alt="">
+                <span class="text">Transfer</span>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card-items">
+                <div class="card-content">
+                    <h4>Connected Wallet</h4>
+                    <p>0.00</p>
+                </div>
+                <div class="card-content">
+                    <h4>Transfer Wallet</h4>
+                    <p>0.00</p>
+                </div>
+                <div class="card-content">
+                    <h4>Total Mining</h4>
+                    <p>0.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container-internal">
+            <div class="card-items">
+                <div class="card-content">
+                    <div class="cyptocurrency-currency">
+                        <img src="/assets/cryptoicon/usdt.png" alt="">
+                        <h4>USDT BEP20</h4>
+                    </div>
+                    <div class="cyptocurrency-balance">
+                        <h4>0.00</h4>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <div class="cyptocurrency-currency">
+                        <img src="/assets/cryptoicon/kaspa.png" alt="">
+                        <h4>KASPA</h4>
+                    </div>
+                    <div class="cyptocurrency-balance">
+                        <h4>0.00</h4>
+                        <small>~ 0.00USDT</small>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <div class="cyptocurrency-currency">
+                        <img src="/assets/cryptoicon/kaspool.jpg" alt="">
+                        <h4>KASPOOL</h4>
+                    </div>
+                    <div class="cyptocurrency-balance">
+                        <h4>0.00</h4>
+                        <small>~ 0.00USDT</small>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <div class="cyptocurrency-currency">
+                        <img src="/assets/cryptoicon/nacho.png" alt="">
+                        <h4>NACHO</h4>
+                    </div>
+                    <div class="cyptocurrency-balance">
+                        <h4>0.00</h4>
+                        <small>~ 0.00USDT</small>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <div class="cyptocurrency-currency">
+                        <img src="/assets/cryptoicon/kaspy.png" alt="">
+                        <h4>KASPY</h4>
+                    </div>
+                    <div class="cyptocurrency-balance">
+                        <h4>0.00</h4>
+                        <small>~ 0.00USDT</small>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <div class="cyptocurrency-currency">
+                        <img src="/assets/cryptoicon/kasper.png" alt="">
+                        <h4>KASPER</h4>
+                    </div>
+                    <div class="cyptocurrency-balance">
+                        <h4>0.00</h4>
+                        <small>~ 0.00USDT</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dock">
+            <div class="buttons">
+                <label for="">
+                    <input type="checkbox" name="check" class="checkbox" id="checkbox1">
+                    <span class="user"></span>
+                    <img src="/assets/icon_menu/user_icon.png" alt="">
+                </label>
+
+                <label for="">
+                    <input type="checkbox" name="check" class="checkbox" checked id="checkbox2">
+                    <span class="net"></span>
+                    <img src="/assets/icon_menu/net_icon.png" alt="">
+                </label>
+
+                <label for="">
+                    <input type="checkbox" name="check" class="checkbox" id="checkbox3">
+                    <span class="das"></span>
+                    <img src="/assets/icon_menu/das_icon.png" alt="">
+                </label>
+
+                <label for="">
+                    <input type="checkbox" name="check" class="checkbox" id="checkbox3">
+                    <span class="his"></span>
+                    <img src="/assets/icon_menu/his_icon.png" alt="">
+                </label>
+
+                <label for="">
+                    <input type="checkbox" name="check" class="checkbox" id="checkbox3">
+                    <span class="down"></span>
+                    <img src="/assets/icon_menu/down_icon.png" alt="">
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lấy tất cả các checkbox
+        const checkboxes = document.querySelectorAll('.checkbox');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                // Nếu một checkbox được chọn, bỏ chọn tất cả các checkbox còn lại
+                checkboxes.forEach(otherCheckbox => {
+                    if (otherCheckbox !== checkbox) {
+                        otherCheckbox.checked = false;
+                    }
+                });
+            });
+        });
+
+        function expandTab(tab) {
+    // Reset all tabs to collapsed and set icons to "black"
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(t => {
+        t.classList.remove('expanded');
+        const img = t.querySelector('img');
+        const iconName = img.className.split('icon-')[1]; // Extract icon name
+        img.src = `/assets/iconmenu/black/${iconName}.png`; // Set to black icon
+    });
+
+    // Expand the clicked tab and set its icon to "white"
+    tab.classList.add('expanded');
+    const clickedImg = tab.querySelector('img');
+    const clickedIconName = clickedImg.className.split('icon-')[1]; // Extract icon name
+    clickedImg.src = `/assets/iconmenu/white/${clickedIconName}.png`; // Set to white icon
+}
+    </script>
+</body>
+
+</html>

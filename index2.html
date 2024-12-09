@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="bottom-tap-bar">
+    <div class="tab expanded" onclick="expandTab(this)">
+      <i class="icon">🏠</i>
+      <span class="text">Balance</span>
+    </div>
+    <div class="tab" onclick="expandTab(this)">
+      <i class="icon">🏠</i>
+      <span class="text">Mining</span>
+    </div>
+    <div class="tab" onclick="expandTab(this)">
+      <i class="icon">🏠</i>
+      <span class="text">Claim</span>
+    </div>
+    <div class="tab" onclick="expandTab(this)">
+      <i class="icon">🏠</i>
+      <span class="text">Withdraw</span>
+    </div>
+    <div class="tab" onclick="expandTab(this)">
+      <i class="icon">🏠</i>
+      <span class="text">Transfer</span>
+    </div>
+  </div>
+
+  <script>
+    function expandTab(tab) {
+      // Reset all tabs to collapsed
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(t => t.classList.remove('expanded'));
+
+      // Expand the clicked tab
+      tab.classList.add('expanded');
+    }
+  </script>
+</body>
+
+</html>
