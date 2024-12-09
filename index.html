@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <title>3D Multiple checkbox</title>
     <script src="https://kit.fontawesome.com/a956e8784e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -185,21 +188,21 @@
         });
 
         function expandTab(tab) {
-    // Reset all tabs to collapsed and set icons to "black"
-    const tabs = document.querySelectorAll('.tab');
-    tabs.forEach(t => {
-        t.classList.remove('expanded');
-        const img = t.querySelector('img');
-        const iconName = img.className.split('icon-')[1]; // Extract icon name
-        img.src = `/assets/iconmenu/black/${iconName}.png`; // Set to black icon
-    });
+            // Reset all tabs to collapsed and set icons to "black"
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(t => {
+                t.classList.remove('expanded');
+                const img = t.querySelector('img');
+                const iconName = img.className.split('icon-')[1]; // Extract icon name
+                img.src = `/assets/iconmenu/black/${iconName}.png`; // Set to black icon
+            });
 
-    // Expand the clicked tab and set its icon to "white"
-    tab.classList.add('expanded');
-    const clickedImg = tab.querySelector('img');
-    const clickedIconName = clickedImg.className.split('icon-')[1]; // Extract icon name
-    clickedImg.src = `/assets/iconmenu/white/${clickedIconName}.png`; // Set to white icon
-}
+            // Expand the clicked tab and set its icon to "white"
+            tab.classList.add('expanded');
+            const clickedImg = tab.querySelector('img');
+            const clickedIconName = clickedImg.className.split('icon-')[1]; // Extract icon name
+            clickedImg.src = `/assets/iconmenu/white/${clickedIconName}.png`; // Set to white icon
+        }
     </script>
 </body>
 
